@@ -13,11 +13,11 @@ const client = new ApolloClient({
 
     operation.setContext({
       headers: {
-        authorization: token ? `Bearer ${token}` : "",
+        authorization: token ? `Bearer ${token}` : ""
       },
     });
   },
-  uri: "/graphql",
+  uri: "/graphql"
 });
 
 function App() {
