@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ApolloProvider } from "@apollo/react-hooks";
 import ApolloClient from "apollo-boost";
 
@@ -26,7 +26,7 @@ function App() {
     <Router>
       <>
         <Navbar />
-        <Switch>
+        <Routes>
           <Route 
             path='/' 
             element={<SearchBooks />} 
@@ -39,7 +39,7 @@ function App() {
             path='*'
             element={<h1 className='display-2'>Wrong page!</h1>}
           />
-        </Switch>
+        </Routes>
       </>
     </Router>
     </ApolloProvider>
