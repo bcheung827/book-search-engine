@@ -13,20 +13,23 @@ const SavedBooks = () => {
 
   useEffect(() => {
     const getUserData = async () => {
+      console.log("started getting user data");
       try {
+        console.log("inside try");
         const token = Auth.loggedIn() ? Auth.getToken() : null;
-
+        console.log(token);
         if (!token) {
           return false;
         }
 
         const response = await getMe(token);
-
+        console.log(response);
         if (!response.ok) {
           throw new Error('something went wrong!');
         }
 
         const user = await response.json();
+        console.log(user);
         setUserData(user);
       } catch (err) {
         console.error(err);
