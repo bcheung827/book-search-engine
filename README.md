@@ -1,5 +1,4 @@
 # book-search-engine
-# social-network-api
 
 ## Table of Contents
   - [Description](#description)
@@ -10,16 +9,15 @@
   - [Contact](#contact)
 
   ## Description
-  The purpose of this project is search for an Api for a social network app where the user can share their thoughts, react to other thoughts, and generate a friend list
+  The purpose of this assignment is for the user to be able to search and save books into local storage.
+  
   ## Installation
   npm i
   
   ## Usage
   In the integrated terminal type npm start then npm run watch
 
- <img src="assets/social-network-api.gif"><br>
-  Or view link here - [Screencastify](https://drive.google.com/file/d/1YGL0AFxAvDUXqpB-8LF-6ejdoeQlAw5W/view)
-
+ 
   ## Testing
   N/A
   
